@@ -102,7 +102,7 @@ class MiaReviewing extends React.Component {
   {
     //alert(this.state.datas.length);
     let togger=e.target.checked
-    alert(this.state.datas.length)
+    
     for (let loopDatas  = 0; loopDatas < this.state.datas.length; loopDatas++) {
       cb_empId[loopDatas].checked=togger
     }
@@ -154,7 +154,6 @@ class MiaReviewing extends React.Component {
     const { name, value } = e.target;
     this.state.resultSearch = [...this.state.datas];
     //alert(e.target.checked)//=true
-    alert(":sasasa")
     if(name!=="cb_empId")
     {
       alert(cb_empId[index].checked)
@@ -402,7 +401,7 @@ class MiaReviewing extends React.Component {
                 Swal.fire({
                   position: 'center',
                   icon: 'Success',
-                  title: 'Data have been Reviewig proceess   ',
+                  title: 'Data have been Judging proceess   ',
                   showConfirmButton: false,
                   timer: 1000
                 })

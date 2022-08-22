@@ -77,7 +77,6 @@ class MiaReviewing extends React.Component {
   {
     //alert(this.state.datas.length);
     let togger=e.target.checked
-    alert(this.state.datas.length)
     for (let loopDatas  = 0; loopDatas < this.state.datas.length; loopDatas++) {
       
       if(this.state.datas.length===1)cb_empId.checked=togger;else cb_empId[loopDatas].checked=togger
@@ -403,7 +402,6 @@ class MiaReviewing extends React.Component {
                
                  
               }),()=>{
-                alert("sasa")
                 this.setState({datas:this.state.resultSearch})
                 localStorage.setItem('data', JSON.stringify(this.state.cadData));
                 const { history }=this.props;

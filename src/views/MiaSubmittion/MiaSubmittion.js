@@ -434,7 +434,6 @@ handleChange = event => {
                               Moderate | <span style={{fontStyle: 'italic', fontSize: 'small', color: 'brown'}}
                               >{this.state.lbhKecil}10%</span>
                             </label>
-                          </div>
                           <input type="file" id="exampleInputFile" />
 
                         </div>
